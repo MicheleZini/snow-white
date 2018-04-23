@@ -1,0 +1,60 @@
+# ---------- calculator.kv  ----------
+ 
+ 
+# Define id so I can refer to the biancBoxLayout
+# class functions
+# Display points to the entry widget
+
+
+<biancaBoxLayout>:
+    orientation: 'horizontal'
+    id: biancaneve
+    
+    MapWidget:
+        id: map
+        size_hint: .8,1 
+                  
+    
+    BoxLayout:
+        orientation:'vertical'
+        size_hint: .2,1
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1,.1
+            Button:
+                id: btn_start
+                text: 'Start'
+                on_press: root.warning()
+                opacity: 1
+                disabled: False
+                 
+            Button:
+                id: btn_stop
+                text: 'Stop'
+                on_press: root.stop() 
+                opacity: .98
+                disabled: True
+        Button:
+            id: clr_all_routes
+            text: 'Clear all Routes'
+            size_hint: 1,.06
+            on_press: root.remove_routes()
+            opacity: .99
+            disabled: False
+
+        Scrollable:
+            Label:
+                id: text_out
+                markup: True
+                halign: 'left'
+                valign: 'top'
+                text: "\n[color=FF9900][b]Apple dear?[/b][/color]\n" 
+                font_size: 13
+                size_hint: 1.01,None
+                height: self.texture_size[1]
+                on_ref_press: root.host_action(args[1])
+
+            
+
+    
+        

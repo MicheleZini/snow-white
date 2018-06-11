@@ -5,6 +5,9 @@ biancaneve is a lulz-driven project born out of curiosity and desire to experime
 
 i do have further and better versions of this project under development, but i rethought the entire system to be scalable, reliable and overall better. so do not hold your breath for that. as for now, this is pretty much as far as u can push python as a GUI environment. I want to clarify that *do not recommend taking this path* for your project, but hey take a look and maybe be inspired
 
+This product includes GeoLite2 data created by MaxMind, available from
+<a href="http://www.maxmind.com">http://www.maxmind.com</a>.
+
 ## usage:
 to run the main GUI and fancy graphics:
 
